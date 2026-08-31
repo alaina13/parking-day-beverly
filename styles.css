@@ -142,6 +142,19 @@ a { color: var(--navy); }
   border-color: var(--white);
 }
 
+.quick-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  margin-top: 28px;
+}
+
+.quick-links .cta-text {
+  margin-top: 0;
+}
+
 /* Sections */
 
 .section { padding: 72px 0; }
