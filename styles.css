@@ -62,7 +62,7 @@ a { color: var(--navy); }
 /* Hero */
 
 .hero {
-  background: #3a3a3a;
+  background: var(--white);
   padding-top: 56px;
   padding-bottom: 80px;
   text-align: center;
@@ -72,6 +72,8 @@ a { color: var(--navy); }
   width: 60%;
   max-width: 340px;
   margin: 0 auto;
+  box-shadow: 0 12px 32px rgba(16, 31, 51, 0.2);
+  border-radius: var(--radius);
 }
 
 .hero-art {
@@ -92,7 +94,7 @@ a { color: var(--navy); }
 }
 
 .hero h1 {
-  color: var(--white);
+  color: var(--navy);
   font-size: 6rem;
 }
 
@@ -101,7 +103,7 @@ a { color: var(--navy); }
 .lede {
   font-size: 1.15rem;
   margin-top: 28px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--ink-soft);
   font-weight: 500;
 }
 
@@ -113,15 +115,15 @@ a { color: var(--navy); }
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--lime);
+  color: var(--navy);
   text-decoration: none;
   border-bottom: 3px solid var(--lime);
   padding-bottom: 4px;
 }
 
 .cta-text:hover {
-  color: var(--white);
-  border-color: var(--white);
+  color: var(--lime-dark);
+  border-color: var(--navy);
 }
 
 /* Sections */
@@ -260,5 +262,4 @@ a { color: var(--navy); }
   h2 { font-size: 1.6rem; }
   .hero h1 { font-size: 3.2rem; }
   #details h2 { font-size: 2rem; }
-  .cards { grid-template-columns: 1fr; }
 }
