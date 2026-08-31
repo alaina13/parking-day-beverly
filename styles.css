@@ -237,6 +237,8 @@ a { color: var(--navy); }
 
 .band h3 {
   font-size: 1.3rem;
+  text-transform: none;
+  letter-spacing: normal;
   margin-bottom: 14px;
 }
 
