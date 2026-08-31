@@ -1,19 +1,27 @@
-/* Parking Day Beverly - design system
-   Palette: traffic-cone orange + park green, distinct from any civic blue/gray theme. */
+/* Park(ing) Day Beverly - design system
+   Palette: warm cream + amber gold, chosen to complement the Park(ing) Day
+   logo (deep green / pink / purple) without reusing its exact colors.
+   The logo's own hues are reserved for the logotype in the header and hero. */
 
 :root {
-  --orange: #e8590c;
-  --orange-dark: #b8450a;
-  --green: #2f6f3e;
-  --green-dark: #1f4d2b;
-  --cream: #fdf6ec;
-  --ink: #22221f;
-  --ink-soft: #55534c;
-  --line: #e6ddc9;
+  --cream: #faf5ec;
+  --cream-tint: #f5ede0;
+  --ink: #231f20;
+  --ink-soft: #6b6459;
+  --line: #e6dcc8;
   --white: #ffffff;
 
+  --amber: #e0a038;
+  --amber-dark: #b87d1f;
+  --brown-dark: #2b2320;
+
+  /* Logotype colors, matched to the Park(ing) Day mark */
+  --logo-green: #1f6b3a;
+  --logo-pink: #f27eb0;
+  --logo-purple: #a855e0;
+
   --radius: 14px;
-  --shadow: 0 8px 24px rgba(34, 34, 31, 0.08);
+  --shadow: 0 8px 24px rgba(43, 35, 32, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -43,12 +51,12 @@ h1, h2, h3 {
 }
 
 h1 { font-size: 2.75rem; }
-h2 { font-size: 1.9rem; color: var(--green-dark); }
-h3 { font-size: 1.15rem; color: var(--orange-dark); }
+h2 { font-size: 1.9rem; color: var(--brown-dark); }
+h3 { font-size: 1.15rem; color: var(--amber-dark); }
 
 p { color: var(--ink-soft); margin: 0 0 1em; }
 
-a { color: var(--green-dark); }
+a { color: var(--amber-dark); }
 
 /* Header */
 
@@ -69,12 +77,19 @@ a { color: var(--green-dark); }
 }
 
 .logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--logo-green);
 }
 
-.logo strong { color: var(--orange); }
+.logo em {
+  font-style: italic;
+  color: var(--logo-pink);
+}
+
+.logo-day {
+  color: var(--logo-purple);
+}
 
 .site-header nav a {
   margin-left: 24px;
@@ -83,12 +98,12 @@ a { color: var(--green-dark); }
   color: var(--ink);
 }
 
-.site-header nav a:hover { color: var(--orange); }
+.site-header nav a:hover { color: var(--amber-dark); }
 
 /* Hero */
 
 .hero {
-  background: linear-gradient(180deg, #fff4e6 0%, var(--cream) 100%);
+  background: linear-gradient(180deg, var(--cream-tint) 0%, var(--cream) 100%);
   padding: 80px 0 64px;
   text-align: center;
 }
@@ -100,7 +115,7 @@ a { color: var(--green-dark); }
   letter-spacing: 0.08em;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--orange-dark);
+  color: var(--amber-dark);
   margin-bottom: 12px;
 }
 
@@ -112,15 +127,15 @@ a { color: var(--green-dark); }
   display: inline-block;
   margin-top: 12px;
   padding: 14px 28px;
-  background: var(--orange);
-  color: var(--white);
+  background: var(--amber);
+  color: var(--brown-dark);
   font-weight: 700;
   text-decoration: none;
   border-radius: 999px;
   box-shadow: var(--shadow);
 }
 
-.cta:hover { background: var(--orange-dark); }
+.cta:hover { background: var(--amber-dark); color: var(--white); }
 
 /* Sections */
 
@@ -142,10 +157,17 @@ a { color: var(--green-dark); }
   padding: 24px;
 }
 
+.closing {
+  margin-top: 32px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--brown-dark);
+}
+
 /* Footer */
 
 .site-footer {
-  background: var(--green-dark);
+  background: var(--brown-dark);
   color: var(--white);
   padding: 32px 0;
   text-align: center;
