@@ -192,18 +192,14 @@ a { color: var(--navy); }
 
 .card-invert {
   background: var(--white);
-  border: 2px solid var(--navy);
+  border: 2px solid var(--lime);
   box-shadow: none;
   margin-top: 24px;
 }
 
 .card-invert h3 {
-  display: inline-block;
   color: var(--navy);
-  background: var(--lime);
-  border-bottom: none;
-  padding: 4px 14px;
-  border-radius: 999px;
+  border-bottom: 3px solid var(--lime);
 }
 
 .card-invert p.stat { color: var(--navy); }
