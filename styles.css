@@ -5,19 +5,19 @@
 
 :root {
   --navy: #101f33;
-  --navy-soft: #1c3150;
   --lime: #d7ff5e;
   --lime-dark: #a9d92e;
   --white: #ffffff;
   --ink: #0d0d0d;
   --ink-soft: #4a4a4a;
-  --line: #101f33;
+  --text-muted-navy: rgba(255, 255, 255, 0.8);
 
   --logo-green: #0f6034;
   --logo-pink: #ff7bac;
   --logo-purple: #b32ece;
 
   --radius: 10px;
+  --shadow-card: 0 12px 32px rgba(16, 31, 51, 0.2);
 }
 
 * { box-sizing: border-box; }
@@ -76,7 +76,7 @@ a { color: var(--navy); }
   width: 60%;
   max-width: 340px;
   margin: 0 auto;
-  box-shadow: 0 12px 32px rgba(16, 31, 51, 0.2);
+  box-shadow: var(--shadow-card);
   border-radius: var(--radius);
 }
 
@@ -149,7 +149,7 @@ a { color: var(--navy); }
 
 .section.invert h2 { color: var(--white); }
 
-.section.invert p { color: rgba(255, 255, 255, 0.78); }
+.section.invert p { color: var(--text-muted-navy); }
 
 #details h2 { font-size: 2.8rem; }
 
@@ -157,10 +157,6 @@ a { color: var(--navy); }
 
 .marquee {
   margin-top: 36px;
-  background: var(--navy);
-  border-radius: var(--radius);
-  padding: 40px 32px;
-  box-shadow: 0 12px 32px rgba(16, 31, 51, 0.2);
   text-align: center;
 }
 
@@ -195,11 +191,11 @@ a { color: var(--navy); }
   margin: 20px 0 0;
 }
 
-.card {
+.marquee, .card {
   background: var(--navy);
   border-radius: var(--radius);
   padding: 40px 32px;
-  box-shadow: 0 12px 32px rgba(16, 31, 51, 0.2);
+  box-shadow: var(--shadow-card);
 }
 
 .card h3 {
@@ -211,22 +207,17 @@ a { color: var(--navy); }
   margin-bottom: 18px;
 }
 
-.card p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-.card p.stat {
+.stat {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: clamp(2.8rem, 6vw, 4.6rem);
   line-height: 1;
   color: var(--white);
+  margin: 0;
 }
 
-.card p.stat-sm { font-size: clamp(1.5rem, 2.8vw, 2rem); }
+.stat-sm { font-size: clamp(1.5rem, 2.8vw, 2rem); }
 
 /* Partners card: inverted palette */
 
@@ -242,7 +233,7 @@ a { color: var(--navy); }
   border-bottom: 3px solid var(--lime);
 }
 
-.card-invert p.stat { color: var(--navy); }
+.card-invert .stat { color: var(--navy); }
 
 .closing {
   margin-top: 32px;
@@ -262,7 +253,7 @@ a { color: var(--navy); }
 }
 
 .site-footer p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-muted-navy);
   margin: 0;
   font-size: 0.9rem;
 }
