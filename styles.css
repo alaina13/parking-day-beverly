@@ -15,6 +15,9 @@
   --logo-green: #0f6034;
   --logo-pink: #ff7bac;
   --logo-purple: #b32ece;
+
+  --radius: 10px;
+  --shadow-card: 0 12px 32px rgba(16, 31, 51, 0.2);
 }
 
 * { box-sizing: border-box; }
@@ -160,7 +163,7 @@ a { color: var(--navy); }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--navy);
+  color: var(--lime);
   margin: 0 0 8px;
 }
 
@@ -170,34 +173,68 @@ a { color: var(--navy); }
   text-transform: uppercase;
   font-size: clamp(3rem, 8vw, 5.5rem);
   line-height: 1;
-  color: var(--navy);
+  color: var(--white);
   margin: 0;
   padding-bottom: 20px;
   border-bottom: 3px solid var(--lime);
 }
 
 .marquee-when {
-  display: inline-block;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-size: clamp(1.5rem, 3.5vw, 2.4rem);
-  color: var(--navy);
-  background: var(--lime);
-  padding: 6px 24px;
-  border-radius: 999px;
-  margin: 24px 0 0;
+  color: var(--lime);
+  margin: 20px 0 0;
 }
 
-.partners {
-  margin-top: 40px;
-  font-size: 1rem;
-  color: var(--ink-soft);
+.marquee, .card {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  box-shadow: var(--shadow-card);
 }
+
+.card h3 {
+  color: var(--lime);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--lime);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 1;
+  color: var(--white);
+  margin: 0;
+}
+
+.stat-sm { font-size: clamp(1.5rem, 2.8vw, 2rem); }
+
+/* Partners card: inverted palette */
+
+.card-invert {
+  background: var(--white);
+  border: 2px solid var(--lime);
+  box-shadow: none;
+  margin-top: 24px;
+}
+
+.card-invert h3 {
+  color: var(--navy);
+  border-bottom: 3px solid var(--lime);
+}
+
+.card-invert .stat { color: var(--navy); }
 
 .closing {
-  margin-top: 16px;
+  margin-top: 32px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
