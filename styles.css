@@ -4,7 +4,7 @@
    The logo's own green/pink/purple are reserved for the wordmark. */
 
 :root {
-  --navy: #070c16;
+  --navy: #101f33;
   --lime: #d7ff5e;
   --lime-dark: #a9d92e;
   --white: #ffffff;
@@ -91,6 +91,13 @@ a { color: var(--navy); }
   line-height: 1;
   color: var(--logo-green);
   margin: 0 0 28px;
+  /* Fixed brand colors (esp. the dark green) are low-contrast on navy;
+     a light outline sharpens the letterforms without changing the palette. */
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.55),
+    1px -1px 0 rgba(255, 255, 255, 0.55),
+    -1px 1px 0 rgba(255, 255, 255, 0.55),
+    1px 1px 0 rgba(255, 255, 255, 0.55);
 }
 
 .logo-text em {
