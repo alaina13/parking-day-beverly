@@ -229,7 +229,7 @@ a { color: var(--navy); }
 }
 
 .site-footer p {
-  color: var(--text-muted-navy);
+  color: var(--white);
   margin: 0;
   font-size: 0.9rem;
 }
