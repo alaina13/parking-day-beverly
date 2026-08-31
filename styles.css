@@ -90,6 +90,8 @@ a { color: var(--navy); }
   font-size: clamp(2.8rem, 11vw, 7rem);
   line-height: 1;
   color: var(--logo-green);
+  text-transform: none;
+  letter-spacing: normal;
   margin: 0 0 28px;
   /* Fixed brand colors (esp. the dark green) are low-contrast on navy;
      a light outline sharpens the letterforms without changing the palette. */
@@ -107,7 +109,7 @@ a { color: var(--navy); }
 
 .logo-text .logo-day { color: var(--logo-purple); }
 
-.hero h1 {
+.hero h2 {
   color: var(--white);
   font-size: clamp(1.8rem, 6vw, 3.2rem);
 }
