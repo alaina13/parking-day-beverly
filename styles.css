@@ -13,6 +13,10 @@
   --ink-soft: #4a4a4a;
   --line: #101f33;
 
+  --logo-green: #0f6034;
+  --logo-pink: #ff7bac;
+  --logo-purple: #b32ece;
+
   --radius: 10px;
 }
 
@@ -85,17 +89,25 @@ a { color: var(--navy); }
 
 .hero .wrap { max-width: 760px; margin: 0 auto; padding-top: 40px; }
 
-.hero-logo {
-  display: block;
-  width: 60%;
-  max-width: 280px;
-  height: auto;
-  margin: 0 auto 32px;
+.logo-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 11vw, 7rem);
+  line-height: 1;
+  color: var(--logo-green);
+  margin: 0 0 28px;
 }
+
+.logo-text em {
+  font-style: italic;
+  color: var(--logo-pink);
+}
+
+.logo-text .logo-day { color: var(--logo-purple); }
 
 .hero h1 {
   color: var(--navy);
-  font-size: 6rem;
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
 }
 
 .hero .rule { border-bottom-color: var(--lime); }
@@ -260,6 +272,5 @@ a { color: var(--navy); }
 @media (max-width: 640px) {
   h1 { font-size: 2.3rem; }
   h2 { font-size: 1.6rem; }
-  .hero h1 { font-size: 3.2rem; }
   #details h2 { font-size: 2rem; }
 }
