@@ -66,26 +66,23 @@ a { color: var(--navy); }
 /* Hero */
 
 .hero {
-  background: var(--white);
+  background: var(--navy);
   padding-top: 56px;
   padding-bottom: 80px;
   text-align: center;
 }
 
 .hero-art-frame {
-  width: 60%;
-  max-width: 340px;
+  width: 65%;
+  max-width: 420px;
   margin: 0 auto;
-  background: var(--navy);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-card);
-  padding: 20px;
 }
 
 .hero-art {
   display: block;
   width: 100%;
   height: auto;
+  filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.35));
 }
 
 .hero .wrap { max-width: 760px; margin: 0 auto; padding-top: 40px; }
@@ -107,7 +104,7 @@ a { color: var(--navy); }
 .logo-text .logo-day { color: var(--logo-purple); }
 
 .hero h1 {
-  color: var(--navy);
+  color: var(--white);
   font-size: clamp(1.8rem, 6vw, 3.2rem);
 }
 
@@ -116,7 +113,7 @@ a { color: var(--navy); }
 .lede {
   font-size: 1.15rem;
   margin-top: 28px;
-  color: var(--ink-soft);
+  color: var(--text-muted-navy);
   font-weight: 500;
 }
 
@@ -128,15 +125,15 @@ a { color: var(--navy); }
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--navy);
+  color: var(--lime);
   text-decoration: none;
   border-bottom: 3px solid var(--lime);
   padding-bottom: 4px;
 }
 
 .cta-text:hover {
-  color: var(--lime-dark);
-  border-color: var(--navy);
+  color: var(--white);
+  border-color: var(--white);
 }
 
 /* Sections */
