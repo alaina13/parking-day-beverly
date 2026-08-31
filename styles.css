@@ -139,11 +139,46 @@ a { color: var(--navy); }
 
 #details h2 { font-size: 2.8rem; }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+/* Marquee: unified venue + date announcement, poster-bill style */
+
+.marquee {
   margin-top: 36px;
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  box-shadow: 0 12px 32px rgba(16, 31, 51, 0.2);
+  text-align: center;
+}
+
+.marquee-eyebrow {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--lime);
+  margin: 0 0 8px;
+}
+
+.marquee-venue {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1;
+  color: var(--white);
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--lime);
+}
+
+.marquee-when {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+  color: var(--lime);
+  margin: 20px 0 0;
 }
 
 .card {
@@ -166,15 +201,6 @@ a { color: var(--navy); }
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   margin: 0;
-}
-
-.card p.stat-label {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--lime);
-  margin: 0 0 4px;
 }
 
 .card p.stat {
