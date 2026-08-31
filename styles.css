@@ -141,7 +141,7 @@ a { color: var(--navy); }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-top: 36px;
 }
@@ -149,7 +149,7 @@ a { color: var(--navy); }
 .card {
   background: var(--navy);
   border-radius: var(--radius);
-  padding: 32px 28px;
+  padding: 40px 32px;
   box-shadow: 0 12px 32px rgba(16, 31, 51, 0.2);
 }
 
@@ -159,7 +159,7 @@ a { color: var(--navy); }
   text-transform: uppercase;
   border-bottom: 3px solid var(--lime);
   padding-bottom: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .card p {
@@ -167,6 +167,46 @@ a { color: var(--navy); }
   font-size: 1.1rem;
   margin: 0;
 }
+
+.card p.stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lime);
+  margin: 0 0 4px;
+}
+
+.card p.stat {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 1;
+  color: var(--white);
+}
+
+.card p.stat-sm { font-size: clamp(1.5rem, 2.8vw, 2rem); }
+
+/* Partners card: inverted palette */
+
+.card-invert {
+  background: var(--white);
+  border: 2px solid var(--navy);
+  box-shadow: none;
+  margin-top: 24px;
+}
+
+.card-invert h3 {
+  display: inline-block;
+  color: var(--navy);
+  background: var(--lime);
+  border-bottom: none;
+  padding: 4px 14px;
+  border-radius: 999px;
+}
+
+.card-invert p.stat { color: var(--navy); }
 
 .closing {
   margin-top: 32px;
@@ -198,4 +238,5 @@ a { color: var(--navy); }
   h2 { font-size: 1.6rem; }
   .hero h1 { font-size: 3.2rem; }
   #details h2 { font-size: 2rem; }
+  .cards { grid-template-columns: 1fr; }
 }
