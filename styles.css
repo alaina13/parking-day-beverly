@@ -100,30 +100,33 @@ a { color: var(--navy); }
 /* Hero */
 
 .hero {
-  background: var(--white);
-  padding: 96px 0 80px;
+  background: #3a3a3a;
+  padding-bottom: 80px;
   text-align: center;
 }
 
-.hero .wrap { max-width: 760px; }
-
-.hero-logo {
+.hero-art {
   display: block;
-  width: 70%;
-  max-width: 420px;
+  width: 100%;
   height: auto;
-  margin: 0 auto 40px;
+  max-height: 60vh;
+  object-fit: cover;
+  object-position: center;
 }
+
+.hero .wrap { max-width: 760px; margin: 0 auto; padding-top: 56px; }
 
 .hero h1 {
-  color: var(--ink);
+  color: var(--white);
   font-size: 6rem;
 }
+
+.hero .rule { border-bottom-color: var(--lime); }
 
 .lede {
   font-size: 1.15rem;
   margin-top: 28px;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
 }
 
@@ -135,15 +138,15 @@ a { color: var(--navy); }
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--navy);
+  color: var(--lime);
   text-decoration: none;
   border-bottom: 3px solid var(--lime);
   padding-bottom: 4px;
 }
 
 .cta-text:hover {
-  color: var(--lime-dark);
-  border-color: var(--navy);
+  color: var(--white);
+  border-color: var(--white);
 }
 
 /* Sections */
